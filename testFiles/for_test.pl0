@@ -1,0 +1,45 @@
+var x:real;
+const h=2;
+var y,i;
+begin
+    y:=1;
+    write("\nstep立即数 2到5递增 step=1\n");
+    for x:=2 step 1 until 5 do
+    begin
+        write(x)
+    end;
+
+    write("\n\nstep立即数 7到4递减 step=-1\n");
+    for x:=7 step -1 until 4 do
+    begin
+        write(x)
+    end;
+
+    write("\n\nstep变量 3到6递增 step=1\n");
+    for x:=3 step y until 6 do
+    begin
+        write(x)
+    end;
+
+    write("\n\nstep常量 3到6递增 step=2\n");
+    for x:=3 step h until 6 do
+    begin
+        write(x)
+    end;
+    
+    write("\n\n");
+    for x:=0 step 1 until 3 do
+    begin
+        if x>1 then
+            break;
+        for i:=0 step 1 until 4 do
+        begin
+            write("%d %d\n",x,i);
+            if i>=3 then
+            begin
+                write("超过了\n")
+            end
+        end
+    end;
+end.
+// 程序结束

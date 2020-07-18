@@ -1,0 +1,32 @@
+var x:real;
+var arr:real[1];
+procedure z(haha,wang,arr);
+    var zq:real;
+    procedure lev2(zqq);
+    begin
+        write("zqq: %d",zqq)
+    end;  
+      
+    begin
+        x:=3.3;
+        // 输出wang的值，应是-0.2
+        write("wang: ");
+        write(wang);write("\n");
+        // 输出arr
+        write("array: %f\n",arr);
+        // 循环输出step为1的haha到7
+        for zq := haha step 1 until 7 do
+        begin
+            write("%d ", zq);
+        end;  
+        write("\n出来后的zq值：%d", zq);
+        call lev2(zq);  // 这里出问题了！！！！参数传不进去
+        write("\n");
+    end;
+begin
+    arr[0]:=9.9;
+    // 传入两个立即数，一个数组变量
+    call z(3, -0.2, arr[0]);
+    write("x: %f\n",x);
+end.
+// 程序结束

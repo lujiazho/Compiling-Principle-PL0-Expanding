@@ -1,0 +1,23 @@
+var x,qq,yy,zop:real;
+const h=2;
+var y,i;
+var zzreal:real[4];
+begin
+    write("\n立即数 2到5递增 step=1\n");
+    for x:=2 step 1 until 5 do
+    begin
+        write(x)
+    end;
+    // 格式化读入
+    read("%f---%d",qq,i);
+    write("%f %d",qq,i);
+
+    // 读入两个数到数组
+    read(zzreal[1], zzreal[2]);
+    for x:=0 step 1 until 3 do
+        if x=1 then
+            // 输出zzreal[1]+1.98231
+            write("%f\n", zzreal[0+x]+1.98231);
+    write("\n\n");
+end.
+// 程序结束

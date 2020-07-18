@@ -1,0 +1,20 @@
+var x,qq,yy,zop:real;
+var z;
+const h=2.93;
+begin
+    // 给yy浮点型变量赋值-3.4
+    yy:=-3.4;
+    // 使yy 自减 1.1
+    yy-=1.1;
+    // 输出yy，应为-4.5
+    write(yy);
+    write("\n");
+    // 整型变量z 赋值 5
+    z := 5;
+    // yy再加上z
+    yy+=z;
+    // yy应该输出0.5
+    write(yy);
+    write("\n");
+end.
+// 程序结束

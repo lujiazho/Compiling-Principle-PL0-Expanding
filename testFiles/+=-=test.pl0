@@ -1,0 +1,23 @@
+var yy:real;
+var zzreal:real[4];
+begin
+    zzreal[2]:=7;
+    zzreal[2]+=3.3;
+    // 输出zzreal[2]的值，应为10.3
+    write(zzreal[2]);
+    write("\n");
+    zzreal[2]-=0.3;
+    // 再次输出，应为10
+    write(zzreal[2]);
+    write("\n");
+    yy:=-3.4;
+    yy-=1.1;
+    // 输出yy的值，应为-4.5
+    write(yy);
+    write("\n");
+    yy+=4.5;
+    // 再次输出，应为0
+    write(yy);
+    write("\n");
+end.
+// 程序结束

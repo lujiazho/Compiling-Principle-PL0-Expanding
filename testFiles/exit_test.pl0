@@ -1,0 +1,21 @@
+var yy:real;
+var zzreal:real[4];
+begin
+    zzreal[2]:=7;
+    // 输出zzreal[2]
+    write(zzreal[2]);
+    write("\n");
+    // 退出程序
+    exit;
+    // 从这里开始的均不执行
+    zzreal[2]-=0.3;
+    write(zzreal[2]);
+    write("\n");
+    yy:=-3.4;
+    yy-=1.1;
+    write(yy);
+    write("\n");
+    yy+=4.5;
+    write(yy);
+end.
+// 程序结束

@@ -1,0 +1,19 @@
+var first,second,third,i;
+begin
+    first := 1;
+    second := 1;
+    i := 2;
+    write(first);
+    write("\n");
+    write(second);
+    write("\n");
+    while i<20 do
+        begin
+            third := first + second;
+            write(third);
+            write("\n");
+            first := second;
+            second := third;
+            i:=i+1;
+        end;
+end.

@@ -1,0 +1,17 @@
+var x:real;
+var zzreal:real[4];
+begin
+    zzreal[2]:=7;
+    zzreal[2]+=1;
+    write(zzreal[2]);
+
+    // 控制台读入
+    read(zzreal[1], zzreal[2]);
+    zzreal[0] := 6.6;
+    zzreal[3] := 0.9;
+    // 进入循环输出数组中每个数
+    for x:=0 step 1 until 3 do
+        write("x[%d]: %f\n",x, zzreal[0+x]+1.98231);
+    write("\n\n");
+end.
+// 程序结束
